@@ -1,7 +1,13 @@
-export default function Home() {
+import React from 'react';
+import Landing from '@/components/Landing';
+import Layout from '@/components/layout';
+
+const HomePage: React.FC = () => {
   return (
-    <>
-      <h1>Bem vindo</h1>
-    </>
+    <Layout>
+      <Landing />
+    </Layout>
   );
-}
+};
+
+export default HomePage;
