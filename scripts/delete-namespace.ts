@@ -4,8 +4,8 @@ import { pinecone } from '@/utils/pinecone-client';
 namespace here and run this script with `pnpm run delete-namespace` */
 
 export const run = async () => {
-  const targetIndex = 'random-utilities' //change to your target index 
-  const targetNamespace = 'Life in the Atmosphere of Venus'; //change to your target namespace 
+  const targetIndex = 'college'; //change to your target index
+  const targetNamespace = 'c1'; //change to your target namespace
 
   try {
     const index = pinecone.Index(targetIndex);

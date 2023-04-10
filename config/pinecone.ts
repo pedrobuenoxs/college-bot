@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 
 /* Change this to your Pinecone index name. Index name can only contain lowercase letters, numbers, and hyphens. Cannot be more than 45 characters.*/
-export const PINECONE_INDEX_NAME = 'random-topics';
+export const PINECONE_INDEX_NAME = 'college';
 
 /* Change, remove, or add topics here. Any topics listed here will be selectable
  by users in the navigation bar. 
@@ -17,15 +17,29 @@ export const PINECONE_INDEX_NAME = 'random-topics';
  - PROMPT is the placeholder text that is shown in the text box for each topic. */
 export const TOPICS = [
   {
-    TOPIC: 'Life in the Atmosphere of Venus',
-    NAMESPACE: 'venus-atmosphere-life', // MUST ONLY CONTAIN LOWER CASE LETTERS A-Z AND HYPHENS
-    PROMPT:
-      'What evidence is there that life exists in the atmosphere of Venus?',
+    TOPIC: 'Cálculo 1',
+    NAMESPACE: 'c1', // MUST ONLY CONTAIN LOWER CASE LETTERS A-Z AND HYPHENS
+    PROMPT: 'Como definir o dominio de uma função?',
   },
   {
-    TOPIC: 'Supreme Court Cases',
-    NAMESPACE: 'supreme-court-cases', // MUST ONLY CONTAIN LOWER CASE LETTERS A-Z AND HYPHENS
-    PROMPT: 'What precedent was set by Morse v. Frederick?',
+    TOPIC: 'Cálculo 2',
+    NAMESPACE: 'c2', // MUST ONLY CONTAIN LOWER CASE LETTERS A-Z AND HYPHENS
+    PROMPT: 'Como derivar uma funcão?',
+  },
+  {
+    TOPIC: 'Cálculo 3',
+    NAMESPACE: 'c3', // MUST ONLY CONTAIN LOWER CASE LETTERS A-Z AND HYPHENS
+    PROMPT: 'Como integrar uma funcão?',
+  },
+  {
+    TOPIC: 'Algebra Linear',
+    NAMESPACE: 'algelin', // MUST ONLY CONTAIN LOWER CASE LETTERS A-Z AND HYPHENS
+    PROMPT: 'Como resolver um sistema de equações lineares?',
+  },
+  {
+    TOPIC: 'Series e equações diferenciais',
+    NAMESPACE: 'series', // MUST ONLY CONTAIN LOWER CASE LETTERS A-Z AND HYPHENS
+    PROMPT: 'Como resolver uma equação diferencial?',
   },
 ];
 

@@ -45,8 +45,8 @@ export const run = async () => {
         console.log('creating vector store...');
         /*create and store the embeddings in the vectorStore*/
         const embeddings = new OpenAIEmbeddings();
-        const index = pinecone.Index(PINECONE_INDEX_NAME); 
-        const namespace = path.basename(directory); // use the directory name as the namespace 
+        const index = pinecone.Index(PINECONE_INDEX_NAME);
+        const namespace = path.basename(directory); // use the directory name as the namespace
 
         //embed the PDF documents
 
@@ -63,7 +63,7 @@ export const run = async () => {
             namespace,
           );
         }
-
+        console.log('namespace', namespace);
         console.log(`File ${file} processed`);
       }
     }
